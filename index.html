@@ -7,14 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <title>RECIMAD</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">RECIMAD</a>
+                <a class="navbar-brand" href="#"><img src="images/index/recimad_header.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -126,7 +127,7 @@
         </div>
     </section>
     <section>
-        <img src="images/index/recimad-logo.png" alt="Recimad">
+        <img src="images/index/recimad_header.png" alt="Recimad">
         <h3>+ de 15 años de trayectoría comercial nos avalan.</h3>
         <h5>Trabajamos día a día para garantizar la satisfacción total de nuestros clientes y poder ofrecerles la
             solución más eficiente para el almacenaje y distribución de sus productos.</h5>
@@ -136,74 +137,105 @@
             <h1>¿POR QUÉ ELEGIRNOS?</h1>
         </div>
         <div>
-            <img src="images/index/alta-calidad.png" alt="Insignía de calidad">
+            <img src="images/index/high_quality_badge.png" alt="Insignía de calidad">
             <h3>CALIDAD</h3>
         </div>
         <div>
-            <img src="images/index/fabrica.png" alt="Fábrica">
+            <img src="images/index/factory.png" alt="Fábrica">
             <h3>PLATA INDUSTRIAL PROPIA</h3>
         </div>
         <div>
-            <img src="images/index/enviado.png" alt="Camión yendo rápido">
+            <img src="images/index/truck.png" alt="Camión yendo rápido">
             <h3>ENTREGA INMEDIATA</h3>
         </div>
         <div>
-            <img src="images/index/cinta-metrica.png" alt="Cinta métrica">
+            <img src="images/index/measuring_tape.png" alt="Cinta métrica">
             <h3>DESARROLLOS A MEDIDA</h3>
         </div>
         <div>
-            <img src="images/index/soporte-tecnico.png" alt="Herramientas">
+            <img src="images/index/tools.png" alt="Herramientas">
             <h3>ASESORAMIENTO TÉNICO</h3>
         </div>
         <div>
-            <img src="images/index/almacen.png" alt="Almacén">
+            <img src="images/index/warehouse.png" alt="Almacén">
             <h3>PERMANENTE STOCK</h3>
         </div>
     </section>
-    <footer id="footer">
+    <footer id="footer" class="footer-bg cts_dv-br">
         <div>
-            <h1>CONTACTO</h1>
+            <h1 class="footer__div__h1">CONTACTO</h1>
         </div>
-        <div>
-            <div>
-                <img src="images/footer/phone.png" alt="Teléfono">
-                <h3>TELÉFONO</h3>
-                <a href="">47398080</a>
-                <p>//</p>
-                <a
-                    href="https://api.whatsapp.com/send?phone=5491549981177&text=¡Hola! Vengo desde la página web y estoy aquí para obtener más información.">+5491549981177</a>
+        <div class="d-flex w-100">
+            <div class="footer_div_wh">
+                <div class="d-flex align-items-center div_png_margin-bm">
+                    <a href=""><img class="png__footer div_png_margin-rt" src="images/footer/phone.png"
+                            alt="Teléfono"></a>
+                    <h4 class="tx_cr-wt"> <a class="tx_cr-wt" href="">47398080</a></h4>
+                </div>
+                <div class="d-flex align-items-center div_png_margin-bm">
+                    <a
+                        href="https://api.whatsapp.com/send?phone=5491549981177&text=¡Hola! Vengo desde la página web de 'RECIMAD' y estoy aquí para obtener más información.">
+                        <img class="png__footer div_png_margin-rt" src="images/footer/whatsapp.png" alt="whatsapp">
+                    </a>
+                    <h4>
+                        <a class="tx_cr-wt"
+                            href="https://api.whatsapp.com/send?phone=5491549981177&text=¡Hola! Vengo desde la página web de 'RECIMAD' y estoy aquí para obtener más información.">+5491549981177
+                        </a>
+                    </h4>
+                </div>
+                <div class="d-flex align-items-center">
+                    <a href="mailto:ventas@recimad.com">
+                        <img class="png__footer div_png_margin-rt" src="images/footer/email.png" alt="Email">
+                    </a>
+                    <a href="mailto:ventas@recimad.com">
+                    </a>
+                    <a href="mailto:ventas@recimad.com">
+                        <h4 class="tx_cr-wt">ventas@recimad.com</h4>
+                    </a>
+                </div>
             </div>
-            <div>
-                <a href="mailto:ventas@recimad.com">
-                    <img src="images/footer/email.png" alt="Email">
-                    <h3>E-MAIL</h3>
-                    <p>ventas@recimad.com</p>
-                </a>
+            <div class="footer_div_wh d-flex align-items-center flex-column footer_reci">
+                <img src="images/footer/recimad_footer.png" alt="Recimad">
+                <div class="d-flex">
+                    <div>
+                        <a href="https://www.linkedin.com/company/recimad-s-a-/"><img class="png__footer-reci"
+                                src="images/footer/linkedin.png" alt="Linkedin"></a>
+                    </div>
+                    <div class="border_rt-wt"></div>
+                    <div>
+                        <a href="https://www.instagram.com/recimad_sa/"><img class="png__footer-reci"
+                                src="images/footer/instagram.png" alt="instagram"></a>
+                    </div>
+                </div>
             </div>
-            <div>
+            <div class="footer_div_wh d-flex flex-column align-items-center footer_div_location">
                 <a
                     href="https://www.google.com/maps?ll=-34.576321,-58.604803&z=13&t=m&hl=es-ES&gl=US&mapclient=embed&cid=7647884064060806888">
-                    <img src="images/footer/location.png" alt="Ubicación">
-                    <h3>Río Negro 8605 - Pablo Podestá - GBA</h3>
+                    <img class="png__footer" src="images/footer/location.png" alt="Ubicación"></a>
+                <a
+                    href="https://www.google.com/maps?ll=-34.576321,-58.604803&z=13&t=m&hl=es-ES&gl=US&mapclient=embed&cid=7647884064060806888">
+                    <h4 class="tx_cr-wt">Río Negro 8605 - Pablo Podestá</h4>
                 </a>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d52561.60958978186!2d-58.604803000000004!3d-34.576321!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6a22be0939b716e8!2sRECIMAD%20SA%20-%20Fabrica%20de%20Pallets%20y%20embalajes!5e0!3m2!1ses!2sus!4v1660364662727!5m2!1ses!2sus"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="350px" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
-        <section>
+        <div class="d-flex justify-content-center cts_dv-br">
+            <h1 class="tx-c">CONTACTOS DESARROLLADOR WEB</h1>
+        </div>
+        <div class="d-flex justify-content-evenly">
             <div>
-                <h1>CONTACTOS DESARROLLADOR WEB</h1>
+                <h4><a class="tx_cr-wt" href="https://github.com/Markish2000"><img class="png__footer"
+                            src="images/footer/github.png" alt="GitHub">Markish2000</a></h4>
             </div>
             <div>
-                <a href="https://github.com/Markish2000"><img src="images/footer/github.png"
-                        alt="GitHub">Markish2000</a>
+                <h4><a class="tx_cr-wt" href="https://www.linkedin.com/in/marcos-hern%C3%A1n-parella-92ba27234/"><img
+                            class="png__footer" src="images/footer/linkedin.png" alt="linkedin">Marcos Hernán
+                        Parella</a></h4>
             </div>
-            <div>
-                <a href="https://www.linkedin.com/in/marcos-hern%C3%A1n-parella-92ba27234/"><img src="images/footer/linkedin.png" alt="linkedin">Marcos Hernán Parella</a>
-            </div>
-        </section>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">

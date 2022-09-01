@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "title": "pallet collar system",
+        "price": 1200,
+        "img": "./img/palletCollarSystem.jpg"
+    },
+    {
+        "id": "2",
+        "title": "pallet simil arlog",
+        "price": 1300,
+        "img": "./img/palletCollarSystem.jpg"
+    },
+    {
+        "id": "3",
+        "title": "pallet descartable",
+        "price": 1400,
+        "img": "./img/palletCollarSystem.jpg"
+    },
+    {
+        "id": "4",
+        "title": "tratamiento térmico",
+        "price": 1500,
+        "img": "./img/palletCollarSystem.jpg"
+    }
+]

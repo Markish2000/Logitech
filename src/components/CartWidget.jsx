@@ -3,7 +3,7 @@ import carrito from "./shopping-cart.png"
 function CartWidget() {
     return (
         <div>
-            <img src={carrito} alt="Carrito de compras" className='imgCarritoDeCompras'/>
+            <a href="#" className="btn"><img src={carrito} alt="Carrito de compras" width="30px"/></a>
         </div>
     )
 }

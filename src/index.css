@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   padding: 0;
   margin: 0;
@@ -16,45 +20,4 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-.divnavBar{
-  padding: 20px;
-  background-color: #001524;
-  display: flex;
-}
-
-.divNavBarImg{
-  display: flex;
-}
-
-.divNavLateral {
-  display: flex;
-  justify-items: flex-end;
-  align-items: center;
-}
-
-.ulNavLateral {
-  display: flex;
-}
-
-.liNavLateral{
-  color: #F15A24;
-  font-size: 20px;
-  padding-right: 20px;
-  list-style: none;
-}
-
-.liNavLateral:hover{
-  cursor: pointer;
-  color: #9c9c9c;
-}
-
-.imgCarritoDeCompras{
-  height: 25px;
-  width: 100%;
-}
-
-.imgCarritoDeCompras:hover{
-  cursor: pointer;
 }

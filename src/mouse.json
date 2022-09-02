@@ -1,0 +1,116 @@
+[
+    {
+        "id": "1",
+        "title": "Mouse inalámbrico Logitech G PRO X SUPERLIGHT",
+        "price": 21999,
+        "img": "./img/mouse/mouseinalambricologitechgproxsuperlight.png"
+    },
+    {
+        "id": "2",
+        "title": "Mouse inalámbrico Logitech PRO",
+        "price": 19999,
+        "img": "./img/mouse/mouseinalambricologitechpro.png"
+    },
+    {
+        "id": "3",
+        "title": "Mouse inalámbrico Logitech G PRO League of Legends 2",
+        "price": 19999,
+        "img": "./img/mouse/mouseinalambricologitechgproleagueoflegends2.png"
+    },
+    {
+        "id": "4",
+        "title": "Mouse Logitech PRO",
+        "price": 6199,
+        "img": "./img/mouse/mouselogitechpro.png"
+    },
+    {
+        "id": "5",
+        "title": "Mouse inalámbrico Logitech G903 LIGHTSPEED con sensor HERO 25K",
+        "price": 14609,
+        "img": "./img/mouse/mouseinalambricologitechg9033lightspeed.png"
+    },
+    {
+        "id": "6",
+        "title": "Mouse inalámbrico Logitech G703 LIGHTSPEED",
+        "price": 12299,
+        "img": "./img/mouse/mouseinalambricologitechg703lightspeed.png"
+    },
+    {
+        "id": "7",
+        "title": "Mouse inalámbrico Logitech G604 LIGHTSPEED",
+        "price": 11302,
+        "img": "./img/mouse/mouseinalambricologitechg604lightspeed.png"
+    },
+    {
+        "id": "8",
+        "title": "Mouse inalámbrico Logitech G603",
+        "price": 8999,
+        "img": "./img/mouse/mouseinalambricologitechg603.png"
+    },
+    {
+        "id": "9",
+        "title": "Mouse Logitech G600",
+        "price": 7092,
+        "img": "./img/mouse/mouselogitechg600.png"
+    },
+    {
+        "id": "10",
+        "title": "Mouse inalámbrico Logitech G502 LIGHTSPEED",
+        "price": 14749,
+        "img": "./img/mouse/mouseinalambricologitechg502lightspeed.png"
+    },
+    {
+        "id": "11",
+        "title": "Mouse Logitech G502 HERO",
+        "price": 9999,
+        "img": "./img/mouse/mouselogitechg502hero.png"
+    },
+    {
+        "id": "12",
+        "title": "Mouse Logitech G502 HERO K/DA",
+        "price": 9500,
+        "img": "./img/mouse/mouselogitechg502herokda.png"
+    },
+    {
+        "id": "13",
+        "title": "Mouse Logitech G403",
+        "price": 8679,
+        "img": "./img/mouse/mouselogitechg403.png"
+    },
+    {
+        "id": "14",
+        "title": "Mouse inalámbrico Logitech G305",
+        "price": 6399,
+        "img": "./img/mouse/mouseinalambricologitechg305.png"
+    },
+    {
+        "id": "15",
+        "title": "Mouse inalámbrico Logitech G305 K/DA LIGHTSPEED",
+        "price": 5616,
+        "img": "./img/mouse/mouseinalambricologitechg305kdalightspeed.png"
+    },
+    {
+        "id": "16",
+        "title": "Mouse inalámbrico Logitech G303 SHROUD EDITION",
+        "price": 22023,
+        "img": "./img/mouse/mouseinalambricologitechg303shroundedition.png"
+    },
+    {
+        "id": "17",
+        "title": "Mouse Óptico Logitech G300s",
+        "price": 4299,
+        "img": "./img/mouse/mouselogitechopticog300s.png"
+    },
+    {
+        "id": "18",
+        "title": "Mouse Logitech G203 LIGHTSYNC",
+        "price": 4499,
+        "img": "./img/mouse/mouselogitechg203lightsync.png"
+    },
+    {
+        "id": "19",
+        "title": "Mouse Logitech MX518 HERO",
+        "price": 6999,
+        "img": "./img/mouse/mouselogitechmx518hero.png"
+    }
+]

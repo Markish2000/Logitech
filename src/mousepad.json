@@ -1,0 +1,31 @@
+[
+    {
+        "id": "1",
+        "title": "Mousepad Logitech G840 XL K/DA",
+        "price": 8999,
+        "img": "./img/mousepad/mousepadlogitechg840kdaxl.png"
+    },    {
+        "id": "2",
+        "title": "Mousepad Logitech G840 XL League Of Legends 2",
+        "price": 8999,
+        "img": "./img/mousepad/mousepadlogitechg840leagueoflegends2.png"
+    },
+    {
+        "id": "3",
+        "title": "Mousepad Logitech G640 de tela",
+        "price": 5399,
+        "img": "./img/mousepad/mousepadlogitechg640.png"
+    },
+    {
+        "id": "1",
+        "title": "Mousepad Logitech G440 de tela rígida",
+        "price": 2590,
+        "img": "./img/mousepad/mousepadlogitechg440.png"
+    },
+    {
+        "id": "1",
+        "title": "Mousepad Logitech G240 de tela",
+        "price": 1764,
+        "img": "./img/mousepad/mousepadlogitechg240.png"
+    }
+]

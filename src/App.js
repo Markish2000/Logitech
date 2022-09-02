@@ -1,4 +1,3 @@
-import './App.css';
 import NavBar from './components/NavBar';
 import RecimadContainer from './components/RecimadContainer';
 
@@ -8,7 +7,9 @@ function App() {
       <header>
         <NavBar/>
       </header>
-      <RecimadContainer/>
+      <section>
+        <RecimadContainer/>
+      </section>
     </div>
   );
 }

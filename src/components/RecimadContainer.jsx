@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
-import productJson from "../recimad.json";
+import productJson from "../mouse.json";
 import ProductList from "./ProductList";
+
 function RecimadContainer() {
     const [product, setProduct] = useState([])
 

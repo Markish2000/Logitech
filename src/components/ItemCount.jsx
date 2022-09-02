@@ -2,13 +2,13 @@ import { useState } from "react"
 
 function ItemCount() { 
 
-const [counter, setCounter] = useState(0)
+const [counter, setCounter] = useState(1)
 
 const handleClickAdd = () => {
     setCounter(counter + 1)
 }
 const handleClickDelete = () => {
-    if (counter > 0){
+    if (counter > 1){
         setCounter(counter - 1)
     }
 }

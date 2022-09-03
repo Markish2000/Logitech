@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import productJson from "../mouse.json";
 import ProductList from "./ProductList";
+import imgMouse from "./mousebanner.webp";
 
 function RecimadContainer() {
     const [product, setProduct] = useState([])
@@ -25,7 +26,8 @@ function RecimadContainer() {
         }, []);
 
 return (
-    <div className="flex">
+    <div>
+        <img src={imgMouse}/>
         <ProductList product={product}/>
     </div>
 )

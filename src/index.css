@@ -53,3 +53,8 @@ code {
   text-align: center;
   width: 100px;
 }
+
+.gd{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}

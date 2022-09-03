@@ -25,7 +25,7 @@ function RecimadContainer() {
         }, []);
 
 return (
-    <div>
+    <div className="flex">
         <ProductList product={product}/>
     </div>
 )

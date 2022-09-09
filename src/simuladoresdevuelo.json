@@ -1,0 +1,62 @@
+[
+    {
+        "id": "1",
+        "title": "Flight Yoke System Palanca de Mandos PRO",
+        "price": 32221,
+        "img": "./img/simuladoresdevuelo/flightyokesystempalancademandospro.png"
+    },
+    {
+        "id": "2",
+        "title": "Panel de conmutadores Pro Flight",
+        "price": 17776,
+        "img": "./img/simuladoresdevuelo/paneldeconmutadoresprofligh.png"
+    },
+    {
+        "id": "3",
+        "title": "Panel múltiple Pro Flight",
+        "price": 31110,
+        "img": "./img/simuladoresdevuelo/panelmultipleproflight.png"
+    },
+    {
+        "id": "4",
+        "title": "Sistema Pro de Control de Vuelo Saitek X52",
+        "price": 37499,
+        "img": "./img/simuladoresdevuelo/sistemaprodecontroldevuelosaitekx52.png"
+    },
+    {
+        "id": "5",
+        "title": "Panel de radio Pro Flight",
+        "price": 31110,
+        "img": "./img/simuladoresdevuelo/panelderadioproflight.png"
+    },
+    {
+        "id": "6",
+        "title": "Panel de instrumentos Pro Flight",
+        "price": 31110,
+        "img": "./img/simuladoresdevuelo/paneldeinstrumentosproflight.png"
+    },
+    {
+        "id": "7",
+        "title": "Pedales de timón PRO Flight",
+        "price": 25924,
+        "img": "./img/simuladoresdevuelo/pedalesdetimonproflight.png"
+    },
+    {
+        "id": "8",
+        "title": "Control X56 HOTAS RGB",
+        "price": 53500,
+        "img": "./img/simuladoresdevuelo/controlx56hotasrgb.png"
+    },
+    {
+        "id": "9",
+        "title": "Cuadrante de aceleración PRO Flight",
+        "price": 28000,
+        "img": "./img/simuladoresdevuelo/cuadrantedeaceleracionproflight.png"
+    },
+    {
+        "id": "10",
+        "title": "Simulador Pc X52 Digital",
+        "price": 26665,
+        "img": "./img/simuladoresdevuelo/simuladorpcx52digital.png"
+    }
+]

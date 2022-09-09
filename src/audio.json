@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "title": "Auriculares G355 con micrófono y cable",
+        "price": 13999,
+        "img": "./img/audio/auricularesg335conmicrofonoycable.png"
+    },
+    {
+        "id": "2",
+        "title": "Auriculares G733 inalámbricos con micrófono LIGHTSPEED K/DA",
+        "price": 31999,
+        "img": "./img/audio/auricularesinalambricosconmicrofonolightspeedg733kda.png"
+    },
+    {
+        "id": "3",
+        "title": "Auriculares G435 inalámbricos con micrófono LIGHTSPEED",
+        "price": 14499,
+        "img": "./img/audio/auricularesinalambricosg435lightspeed.png"
+    }
+]

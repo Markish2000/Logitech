@@ -1,8 +1,20 @@
 [
     {
         "id": "1",
-        "title": "Mousepad Logitech G840 XL K/DA",
-        "price": 8999,
-        "img": "./img/mousepad/mousepadlogitechg840kdaxl.png"
+        "title": "Logitech Teclado G413 TKL SE Mecánico",
+        "price": 13999,
+        "img": "./img/teclado/tecladologitechg413tkl.png"
+    },
+    {
+        "id": "2",
+        "title": "Logitech Teclado G915 inalámbrico LIGHTSPEED GL TACTILE",
+        "price": 44249,
+        "img": "./img/teclado/tecladologitechg915lightspeed.png"
+    },
+    {
+        "id": "3",
+        "title": "Logitech Teclado G915 Mecánico compacto TKL RGB inalámbrico LIGHTSPEED GL TACTILE",
+        "price": 43499,
+        "img": "./img/teclado/tecladologitechg915tkl.png"
     }
 ]

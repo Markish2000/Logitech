@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import productJson from "../mouse.json";
-import ProductList from "./ProductList";
-import imgMouse from "./mousebanner.webp";
+import productJson from "../../audio.json";
+import ProductList from "./ProductListAudio";
+import imgAudio from "../audiobanner.webp";
 
-function RecimadContainer() {
+function Audio() {
     const [product, setProduct] = useState([])
 
     const getProduct = (data, time) => 
@@ -27,9 +27,9 @@ function RecimadContainer() {
 
 return (
     <div>
-        <img src={imgMouse} alt="Mouse"/>
+        <img src={imgAudio} alt="Audio"/>
         <ProductList product={product}/>
     </div>
 )
 }
-export default RecimadContainer
+export default Audio

@@ -1,5 +1,3 @@
-import ItemCount from "./ItemCount"
-
 function Product({product}) {
     const {title, img, price} = product
     return (
@@ -9,7 +7,6 @@ function Product({product}) {
                     <h2 className="card-title">{title}</h2>
                     <p>Precio: ${price}</p>
                     <div className="card-actions justify-end">
-                        <ItemCount/>
                     <button className="btn btn-comprar">comprar</button>
                     </div>
                 </div>

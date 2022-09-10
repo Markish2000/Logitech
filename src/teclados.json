@@ -1,20 +1,98 @@
 [
     {
         "id": "1",
-        "title": "Logitech Teclado G413 TKL SE Mecánico",
-        "price": 13999,
-        "img": "./img/teclado/tecladologitechg413tkl.png"
+        "title": "Teclado G413 TKL SE Mecánico",
+        "price": 15999,
+        "img": "../../img/teclado/tecladog413tklsemecanico.png"
     },
     {
         "id": "2",
-        "title": "Logitech Teclado G915 inalámbrico LIGHTSPEED GL TACTILE",
-        "price": 44249,
-        "img": "./img/teclado/tecladologitechg915lightspeed.png"
+        "title": "Teclado G PRO K/DA Mecánico",
+        "price": 26499,
+        "img": "../../img/teclado/tecladogprokdamecanico.png"
     },
     {
         "id": "3",
-        "title": "Logitech Teclado G915 Mecánico compacto TKL RGB inalámbrico LIGHTSPEED GL TACTILE",
-        "price": 43499,
-        "img": "./img/teclado/tecladologitechg915tkl.png"
+        "title": "Teclado G915 TKL RGB inalámbrico LIGHTSPEED GL TACTILE",
+        "price": 49999,
+        "img": "../../img/teclado/tecladog915tklrgbinalambricolightspeedgltactile.png"
+    },
+    {
+        "id": "4",
+        "title": "Teclado G815 Mécanico LIGHTSYNC RGB GL TACTILE",
+        "price": 38499,
+        "img": "../../img/teclado/tecladomecanicog815lightsyncrgbgltactile.png"
+    },
+    {
+        "id": "5",
+        "title": "Teclado G413 SE FULLSIZE Mecánico",
+        "price": 17299,
+        "img": "../../img/teclado/tecladog413sefullsizemecanico.png"
+    },
+    {
+        "id": "6",
+        "title": "Teclado G513 Mécanico RGB LIGHTSYNC CARBON",
+        "price": 28749,
+        "img": "../../img/teclado/tecladomecanicorgblightsyncg513carbongxbrown.png"
+    },
+    {
+        "id": "7",
+        "title": "Teclado G PRO Mecánico Edición LEAGUE OF LEGENDS 2",
+        "price": 26499,
+        "img": "../../img/teclado/tecladomecanicogproleagueoflegends2.png"
+    },
+    {
+        "id": "8",
+        "title": "Teclado G413 Mécanico CARBON",
+        "price": 20699,
+        "img": "../../img/teclado/tecladomecanicog413carbon.png"
+    },
+    {
+        "id": "9",
+        "title": "Teclado G PRO X Mecánico",
+        "price": 31100,
+        "img": "../../img/teclado/tecladogproxmecanico.png"
+    },
+    {
+        "id": "10",
+        "title": "Teclado G PRO Mécanico",
+        "price": 0,
+        "img": "../../img/teclado/tecladogpromecanico.png"
+    },
+    {
+        "id": "11",
+        "title": "Teclado G PRO X CLICKY Mecánico",
+        "price": 19379,
+        "img": "../../img/teclado/tecladogpromecanicoclicky.png"
+    },
+    {
+        "id": "12",
+        "title": "Teclado G512 RGB LIGHTSYNC Mecánico",
+        "price": 23100,
+        "img": "../../img/teclado/tecladog513rglightsyncmecanico.png"
+    },
+    {
+        "id": "13",
+        "title": "Teclado G915 LIGHTSPEED Inalámbrico GL TACTILE",
+        "price": 31100,
+        "img": "../../img/teclado/tecladog915lightspeedinalambricogltactile.png"
+    },
+    {
+        "id": "14",
+        "title": "Teclado G513 CARBON ROMER G TACTIL IDIOMA: ESPAÑOL",
+        "price": 28794,
+        "img": "../../img/teclado/tecladog513carbongtactil.png"
+    },
+    {
+        "id": "15",
+        "title": "Teclado G213 PRODIGY",
+        "price": 11699,
+        "img": "../../img/teclado/tecladog213prodigy.png"
+    },
+    {
+        "id": "16",
+        "title": "Teclado G213 PRODIGY",
+        "price": 9499,
+        "img": "../../img/teclado/tecladog513gamer.png"
     }
 ]

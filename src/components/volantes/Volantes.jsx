@@ -25,11 +25,11 @@ function Volantes() {
                 .catch((err) => console.log(err, ":no hay productos"))
         }, []);
 
-return (
-    <div>
-        <img src={imgTeclado}/>
-        <ProductList product={product}/>
-    </div>
-)
+    return (
+        <div>
+            <img src={imgTeclado}/>
+            <ProductList product={product}/>
+        </div>
+    )
 }
 export default Volantes

@@ -3,18 +3,18 @@
         "id": "1",
         "title": "Logitech Gamepad F710 Wireless",
         "price": 9999,
-        "img": "./img/controles/gamepadf710wireless.png"
+        "img": "../../img/controles/gamepadf710wireless.png"
     },
     {
         "id": "2",
         "title": "Logitech Gamepad F310",
         "price": 5599,
-        "img": "./img/controles/logitechgamepadf310.png"
+        "img": "../../img/controles/logitechgamepadf310.png"
     },
     {
         "id": "3",
         "title": "Logitech Gamepad Extreme 3D PRO",
         "price": 16000,
-        "img": "./img/controles/gamepadextreme3dpro.png"
+        "img": "../../img/controles/gamepadextreme3dpro.png"
     }
 ]

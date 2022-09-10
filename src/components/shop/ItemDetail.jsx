@@ -1,7 +1,7 @@
 function ItemDetail( {item} ) {
     return (
         <div className="card w-96 bg-base-100 shadow-xl">
-        <figure><img src={item.img} alt="Mouse" /></figure>
+        <figure><img src={item.img} alt={item.title}/></figure>
         <div className="card-body">
             <h2 className="card-title">{item.title}</h2>
             <p>Precio: ${item.price}</p>

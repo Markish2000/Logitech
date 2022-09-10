@@ -1,9 +1,9 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Controles from './components/controles/Controles';
-import Footer from './components/Footer';
+import Footer from './components/headerAndFooter/Footer';
 import MousePads from './components/mousepads/MousePads';
-import NavBar from './components/NavBar';
-import RecimadContainer from './components/RecimadContainer';
+import NavBar from './components/headerAndFooter/NavBar';
+import RecimadContainer from './components/mouse/Mouse';
 import Teclado from './components/teclado/Teclado';
 import Volantes from './components/volantes/Volantes';
 import Audio from './components/audio/Audio';
@@ -14,6 +14,8 @@ import ItemDetailContainerAudio from './components/audio/ItemDetailContainerAudi
 import ItemDetailContainerVolantes from './components/volantes/ItemDetailContainerVolantes';
 import ItemDetailContainerSimuladorDeVuelo from './components/simuladoresDeVuelo/ItemDetailContainerSimuladorDeVuelo';
 import ItemDetailContainerTeclado from './components/teclado/ItemDetailContainerTeclado';
+import IndexContainer from './components/LogitechContainer';
+import ItemDetailContainerMouse from './components/mouse/ItemDetailContainerMouse';
 
 
 function App() {
@@ -21,19 +23,21 @@ function App() {
 <BrowserRouter>
   <NavBar/>
   <Routes>
-    <Route path='/' element={<RecimadContainer/>}/>
+    <Route path='/' element={<IndexContainer/>}/>
+    <Route path='mouse' element={<RecimadContainer/>}/>
+    <Route path='mouse/detallesMouse/:id' element={<ItemDetailContainerMouse/>}/>
     <Route path='teclado' element={<Teclado/>}/>
-    <Route path='detallesTeclado' element={<ItemDetailContainerTeclado/>}/>
+    <Route path='teclado/detallesTeclado/:id' element={<ItemDetailContainerTeclado/>}/>
     <Route path='mousepads' element={<MousePads/>}/>
-    <Route path='detallesmousepads/:id' element={<ItemDetailContainerMousePads/>}/>
+    <Route path='mousepads/detallesmousepads/:id' element={<ItemDetailContainerMousePads/>}/>
     <Route path='volantes' element={<Volantes/>}/>
-    <Route panth='detallesVolantes' element={<ItemDetailContainerVolantes/>}/>
+    <Route path='volantes/detallesVolantes/:id' element={<ItemDetailContainerVolantes/>}/>
     <Route path='controles' element={<Controles/>}/>
-    <Route path='detallescontroles/:id' element={<ItemDetailContainerControles/>}/>
+    <Route path='controles/detallescontroles/:id' element={<ItemDetailContainerControles/>}/>
     <Route path='audio' element={<Audio/>}/>
-    <Route path='detallesAudio' element={<ItemDetailContainerAudio/>}/>
+    <Route path='audio/detallesAudio/:id' element={<ItemDetailContainerAudio/>}/>
     <Route path='simuladoresDeVuelo' element={<SimuladoresDeVuelo/>}/>
-    <Route path='detallesSimuladoresDeVuelo' element={<ItemDetailContainerSimuladorDeVuelo/>}/>
+    <Route path='simuladoresDeVuelo/detallesSimuladoresDeVuelo/:id' element={<ItemDetailContainerSimuladorDeVuelo/>}/>
   </Routes>
   <Footer/>
 </BrowserRouter>

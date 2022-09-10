@@ -1,20 +1,128 @@
 [
     {
         "id": "1",
-        "title": "Auriculares G355 con micrófono y cable",
-        "price": 13999,
-        "img": "../../img/audio/auricularesg335conmicrofonoycable.png"
+        "title": "Auriculares G PRO X inalámbricos LIGHTSPEED",
+        "price": 40999,
+        "img": "../../img/audio/auricularesgproxinalambricoslightspeed.png"
     },
     {
         "id": "2",
+        "title": "Auriculares PRO X inalámbricos LIGHTSPEED",
+        "price": 40999,
+        "img": "../../img/audio/auricularesinalambricoslightspeedprox.png"
+    },
+    {
+        "id": "3",
+        "title": "Auriculares G PRO X League Of Legends 2",
+        "price": 34499,
+        "img": "../../img/audio/auricularegproxleagueoflegends2.png"
+    },
+    {
+        "id": "4",
+        "title": "Auriculares G PRO X con cable",
+        "price": 32799,
+        "img": "../../img/audio/auricularesgproxconcable.png"
+    },
+    {
+        "id": "5",
+        "title": "Auriculares G PRO GAMING con cable",
+        "price": 26449,
+        "img": "../../img/audio/auricularesgprogamingconcable.png"
+    },
+    {
+        "id": "6",
+        "title": "Auriculares PRO",
+        "price": 15999,
+        "img": "../../img/audio/auricularespro.png"
+    },
+    {
+        "id": "7",
+        "title": "Auriculares G935 inalámbricos LIGHTSYNC",
+        "price": 41399,
+        "img": "../../img/audio/auricularesg935inalambricoslightsync.png"
+    },
+    {
+        "id": "8",
+        "title": "Auriculares G733 inalámbricos",
+        "price": 35999,
+        "img": "../../img/audio/auricularesg733inalambricos.png"
+    },
+    {
+        "id": "9",
         "title": "Auriculares G733 inalámbricos con micrófono LIGHTSPEED K/DA",
         "price": 31999,
         "img": "../../img/audio/auricularesinalambricosconmicrofonolightspeedg733kda.png"
     },
     {
-        "id": "3",
+        "id": "10",
+        "title": "Headband strap para G733",
+        "price": 1499,
+        "img": "../../img/audio/headbandstrapparag733.png"
+    },
+    {
+        "id": "11",
+        "title": "Auriculares G635 LIGHTSYNC 7.1",
+        "price": 29899,
+        "img": "../../img/audio/auricularesg635lightsync71.png"
+    },
+    {
+        "id": "12",
+        "title": "Parlantes G560 LIGHTSYNC",
+        "price": 50999,
+        "img": "../../img/audio/parlantesg560lightsync.png"
+    },
+    {
+        "id": "13",
+        "title": "Auriculares G535 inalámbricos LIGHTSPEED",
+        "price": 14499,
+        "img": "../../img/audio/auricularesinalambricosg535lightspeed.png"
+    },
+    {
+        "id": "14",
+        "title": "Auriculares G533 inalámbrico 7.1",
+        "price": 16499,
+        "img": "../../img/audio/auricularesg533inalambrico71.png"
+    },
+    {
+        "id": "15",
         "title": "Auriculares G435 inalámbricos con micrófono LIGHTSPEED",
         "price": 14499,
         "img": "../../img/audio/auricularesinalambricosg435lightspeed.png"
+    },
+    {
+        "id": "16",
+        "title": "Auriculares G433",
+        "price": 22999,
+        "img": "../../img/audio/auricularesg433.png"
+    },
+    {
+        "id": "17",
+        "title": "Auriculares G432",
+        "price": 17999,
+        "img": "../../img/audio/auricularesg432.png"
+    },
+    {
+        "id": "18",
+        "title": "Auriculares G355 con micrófono y cable",
+        "price": 13999,
+        "img": "../../img/audio/auricularesg335conmicrofonoycable.png"
+    },
+    {
+        "id": "19",
+        "title": "Auriculares G333 K/DA",
+        "price": 9607,
+        "img": "../../img/audio/auricularesg333kda.png"
+    },
+    {
+        "id": "20",
+        "title": "Auriculares G332",
+        "price": 12649,
+        "img": "../../img/audio/auricularesg332.png"
+    },
+    {
+        "id": "21",
+        "title": "MIC COVER",
+        "price": 1799,
+        "img": "../../img/audio/miccover.png"
     }
 ]

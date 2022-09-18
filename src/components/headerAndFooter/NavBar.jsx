@@ -3,7 +3,7 @@ import CartWidget from "../CartWidget"
 import imgRecimad from "../logitechlogo.png"
 import DarkModeButton from "../DarkModeButton"
 
-export const NavBar = () => {
+const NavBar = () => {
     const navLinkclassName = ( navData ) =>
     navData.isActive ? 'btn btn-comprar' : '';
 

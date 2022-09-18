@@ -3,7 +3,7 @@ import ItemDetail from "../shop/ItemDetail";
 import productJson from "../../volantes.json";
 import { useParams } from "react-router-dom";
 
-export const ItemDetailContainerVolantes = () => {
+const ItemDetailContainerVolantes = () => {
     const [ item, setItem ] = useState( {} );
     const { id } = useParams();
 

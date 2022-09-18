@@ -3,7 +3,7 @@ import productJson from "../../volantes.json";
 import ProductList from "./ProductListVolantes";
 import imgTeclado from "../volantesbanner.webp";
 
-export const Volantes = () => {
+const Volantes = () => {
     const [ product, setProduct ] = useState( [] );
 
     const getProduct = ( data, time ) => 

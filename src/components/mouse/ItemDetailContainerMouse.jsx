@@ -3,7 +3,7 @@ import ItemDetail from "../shop/ItemDetail";
 import productJson from "../../mouse.json";
 import { useParams } from "react-router-dom";
 
-export const ItemDetailContainerMouse = () => {
+const ItemDetailContainerMouse = () => {
     const [ item, setItem ] = useState( {} );
     const { id } = useParams();
 

@@ -3,7 +3,7 @@ import productJson from "../../controles.json";
 import imgControles from "../controlesbanner.webp";
 import ProductListControles from "./ProductListControles";
 
-export const Controles = () => {
+const Controles = () => {
     const [ product, setProduct ] = useState( [] );
 
     const getProduct = ( data, time ) => 

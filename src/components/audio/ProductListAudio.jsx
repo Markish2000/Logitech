@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Product from "../Product";
 
-export const ProductListAudio = ( product ) => {
+const ProductListAudio = ( product ) => {
     return (
         <div className="gd">
             {product.length ? (

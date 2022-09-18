@@ -1,4 +1,4 @@
-export const Product = ( { product } ) => {
+const Product = ( { product } ) => {
     const { title, img, price } = product;
     return (
             <div className="card w-96 bg-base-100 shadow-xl">

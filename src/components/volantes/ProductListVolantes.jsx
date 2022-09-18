@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Product from "../Product";
 
-export const ProductListVolantes = ( { product } ) => {
+const ProductListVolantes = ( { product } ) => {
     return (
         <div className="gd">
             { product.length ? (

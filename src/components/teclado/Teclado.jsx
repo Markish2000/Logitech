@@ -3,7 +3,7 @@ import productJson from "../../teclados.json";
 import ProductListTeclado from "./ProductListTeclado";
 import imgTeclado from "../tecladobanner.webp";
 
-export const Teclado = () => {
+const Teclado = () => {
     const [ product, setProduct ] = useState( [] );
 
     const getProduct = ( data, time ) => 

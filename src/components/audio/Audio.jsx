@@ -3,7 +3,7 @@ import productJson from "../../audio.json";
 import ProductList from "./ProductListAudio";
 import imgAudio from "../audiobanner.webp";
 
-export const Audio = () => {
+const Audio = () => {
     const [ product, setProduct ] = useState( [] )
 
     const getProduct = ( data, time ) => 

@@ -3,7 +3,7 @@ import productJson from "../../mouse.json";
 import imgMouse from "../mousebanner.webp";
 import ProductListMouse from "./ProductListMouse";
 
-export const Mouse = () => {
+const Mouse = () => {
     const [ product, setProduct ] = useState( [] )
 
     const getProduct = ( data, time ) => 

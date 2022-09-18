@@ -3,7 +3,7 @@ import productJson from "../../mousepad.json";
 import ProductList from "../ProductList";
 import imgTeclado from "../mousepadbanner.webp";
 
-export const MousePads = () => {
+const MousePads = () => {
     const [ product, setProduct ] = useState( [] )
 
     const getProduct = ( data, time ) => 

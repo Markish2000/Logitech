@@ -1,6 +1,6 @@
 import carrito from "./shopping-cart.png"
 
-export const CartWidget = () => {
+const CartWidget = () => {
     return (
         <div>
             <a className="btn"><img src={ carrito } alt="Carrito de compras" width="30px"/></a>

@@ -3,7 +3,7 @@ import productJson from "../../simuladoresdevuelo.json";
 import ProductList from "./ProductListSimuladoresDeVuelo";
 import imgTeclado from "../simuladoresdevuelobanner.webp";
 
-export const SimuladoresDeVuelo = () => {
+const SimuladoresDeVuelo = () => {
     const [ product, setProduct ] = useState( [] );
 
     const getProduct = ( data, time ) => 

@@ -3,7 +3,7 @@ import ItemDetail from "../shop/ItemDetail";
 import productJson from "../../audio.json";
 import { useParams } from "react-router-dom";
 
-export const ItemDetailContainerAudio = () => {
+const ItemDetailContainerAudio = () => {
     const [ item, setItem ] = useState( {} );
     const { id } = useParams();
 

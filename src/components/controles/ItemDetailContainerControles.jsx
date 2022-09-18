@@ -3,7 +3,7 @@ import ItemDetail from "../shop/ItemDetail";
 import productJson from "../../controles.json";
 import { useParams } from "react-router-dom";
 
-export const ItemDetailContainerControles = () => {
+const ItemDetailContainerControles = () => {
     const [ item, setItem ] = useState( {} );
     const { id } = useParams();
 

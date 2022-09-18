@@ -1,16 +1,12 @@
 import { useContext } from "react";
 import ProductContext from "../../context/ProductContext";
 import ItemCount from "../ItemCount";
-import { useCart } from "../../context/CartContext";
 import { NavLink } from "react-router-dom";
 
-const ItemDetail = ( { event, item } ) => {
-    const addToCart = useCart();
+const ItemDetail = ( { item } ) => {
     const productContext = useContext( ProductContext );
 
-    const addHandler = ( item ) => { 
-        // addToCart( title );
-        console.log( productContext )
+    const addHandler = ( item ) => {
         productContext.addProduct(item)
     };
 

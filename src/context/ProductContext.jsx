@@ -49,8 +49,18 @@ export const ProductContextProvider = ( { children } ) => {
         });
     };
 
+    const context = {
+        products, 
+        exists, 
+        addProduct, 
+        cleanProduct, 
+        emptyCart, 
+        earrings, 
+        updateState
+    };
+
     return (
-        <ProductContext.Provider value={ { products, exists, addProduct, cleanProduct, emptyCart, earrings, updateState } }> 
+        <ProductContext.Provider value={ context }> 
             { children } 
         </ProductContext.Provider>
     );

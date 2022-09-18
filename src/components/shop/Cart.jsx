@@ -3,13 +3,14 @@ import ProductContext from "../../context/ProductContext";
 
 export const Cart = () => {
     const productContext = useContext( ProductContext );
-
-    const nose = () =>{
-        console.log(productContext.products[0].title)
-    }
-
     return (
-        <div onClick={nose}>Cart</div>
+        <div>                
+            <figure><img src={ productContext.products[0].img } alt={ productContext.products[0].title }/></figure>
+            <div className="card-body">
+                <h2 className="card-title">{ productContext.products[0].title }</h2>
+                <p>Precio: ${ productContext.products[0].price }</p>
+            </div>
+        </div>
     )
 }
 

@@ -3,30 +3,28 @@ import ItemDetail from "../shop/ItemDetail";
 import productJson from "../../teclados.json";
 import { useParams } from "react-router-dom";
 
-function ItemDetailContainerTeclado() {
-
-    const [item, setItem] = useState({})
+export const ItemDetailContainerTeclado = () => {
+    const [ item, setItem ] = useState( {} )
     const { id } = useParams()
 
-    useEffect(() => {
+    useEffect( () => {
         getItem().then( data => {
-            if (data) {
-                setItem(data)
+            if ( data ) {
+                setItem( data )
             }
         })
-    }, [])
-    
+    }, [] );
 
     const getItem = () => { 
         return new Promise( resolve => {
-            setTimeout(() => {
-                resolve( productJson.find( product => product.id == id) )
-            }, 2000);
-        })
-    }
+            setTimeout( () => {
+                resolve( productJson.find( product => product.id == id ) )
+            }, 2000 );
+        });
+    };
 
     return (
-        <ItemDetail item={item}/>
-    )
-}
+        <ItemDetail item={ item }/>
+    );
+};
 export default ItemDetailContainerTeclado

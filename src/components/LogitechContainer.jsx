@@ -1,6 +1,14 @@
-function IndexContainer() {
+import { CartProvider, useCart } from "../context/CartContext"
+
+export const LogitechContainer = () => {
+  const { cart } = useCart();
+
   return (
-    <div>indexContainer</div>
-  )
-}
-export default IndexContainer
+    <div>
+      <strong>jaja</strong>
+        <CartProvider>
+        </CartProvider>
+    </div>
+  );
+};
+export default LogitechContainer

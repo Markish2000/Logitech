@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 import Product from "../Product";
 
-function ProductListMouse({product}) {
+export const ProductListMouse = ( { product } ) => {
     return (
         <div className="gd">
-            {product.length ? (
-                product.map((product) => <Link to={`detallesMouse/${product.id}`}><Product key={product.id} product={product}/></Link>)
+            { product.length ? (
+                product.map( ( product ) => <Link to={ `detallesMouse/${ product.id }` }><Product key={ product.id } product={ product }/></Link> )
             ) : (
                 <h2>Cargando...</h2>
-            )}
+            )};
         </div>
     );
 };

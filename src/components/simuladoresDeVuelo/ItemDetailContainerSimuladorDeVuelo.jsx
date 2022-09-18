@@ -3,30 +3,28 @@ import ItemDetail from "../shop/ItemDetail";
 import productJson from "../../simuladoresdevuelo.json";
 import { useParams } from "react-router-dom";
 
-function ItemDetailContainerSimuladorDeVuelo() {
-
-    const [item, setItem] = useState({})
+export const ItemDetailContainerSimuladorDeVuelo = () => {
+    const [ item, setItem ] = useState( {} )
     const { id } = useParams()
 
-    useEffect(() => {
+    useEffect( () => {
         getItem().then( data => {
-            if (data) {
-                setItem(data)
-            }
-        })
-    }, [])
-    
+            if ( data ) {
+                setItem( data )
+            };
+        });
+    }, [] );
 
     const getItem = () => { 
         return new Promise( resolve => {
-            setTimeout(() => {
+            setTimeout( () => {
                 resolve( productJson.find( product => product.id == id) )
-            }, 2000);
-        })
-    }
+            }, 2000 );
+        });
+    };
 
     return (
-        <ItemDetail item={item}/>
-    )
-}
+        <ItemDetail item={ item }/>
+    );
+};
 export default ItemDetailContainerSimuladorDeVuelo

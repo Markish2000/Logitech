@@ -1,24 +1,41 @@
-import { useState } from "react"
+import { useState } from "react";
 
-function ItemCount() { 
+const ItemCount = () => {
+    const [ counter, setCounter ] = useState( 1 );
+    const [ viewImput, setViewImput ] = useState( false );
 
-const [counter, setCounter] = useState(1)
+    const handleClickAdd = () => {
+        setCounter( counter + 1 )
+        if ( counter + 1 >= 5) {
+            setViewImput( true )
+        }
+    };
 
-const handleClickAdd = () => {
-    setCounter(counter + 1)
-}
-const handleClickDelete = () => {
-    if (counter > 1){
-        setCounter(counter - 1)
-    }
-}
+    const handleClickDelete = () => {
+        if ( counter > 1 ) {
+            setCounter( counter - 1 )
+        };
+    };
 
-    return (
-        <div className="btn-group">
-            <button onClick={handleClickDelete} className="btn btn-comprar">-</button>
-            <p className="contador">{counter}</p>
-            <button onClick={handleClickAdd} className="btn btn-comprar">+</button>
-        </div>
-    )
-}
+    const handleChangeCounter = ( event ) => {
+        setCounter( event.target.value )
+    };
+
+    if (viewImput) {
+        return (
+            <>
+            <input type="number" min="6" onChange={ handleChangeCounter }/>
+            <h3>{ counter }</h3>
+            </>
+        )
+    } else {
+        return (
+            <div className="btn-group">
+                    <button onClick={ handleClickDelete } className="btn btn-comprar">-</button>
+                    <p className="contador">{ counter }</p>
+                    <button onClick={ handleClickAdd } className="btn btn-comprar">+</button>
+            </div>
+        )
+    };
+};
 export default ItemCount

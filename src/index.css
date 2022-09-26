@@ -60,18 +60,21 @@ code {
 }
 
 .btn-detail{
+  margin-top: 20px;
   width: 100%;
 }
 
-.detail-border{
-  height: 100vh;
-  border: #6db5d4 solid 2px;
-}
-
 .flex-detail{
+  margin-top: 20px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.detail-border{
+  padding-bottom: 20px;
+  width: 70vh;
+  border: #6db5d4 solid 2px;
 }
 
 .pd-detail{
@@ -80,4 +83,61 @@ code {
 
 .border-quanty{
   border: #009EE2 solid 2px;
+}
+
+.bestseller{
+  background-color: #008ac5;
+  text-transform: uppercase;
+}
+
+.nuevo-vendidos-margin{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.masvendidos-margin{
+  margin-top: 10px;
+}
+
+.rating{
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.price-fs{
+  font-size: 50px;
+}
+
+.quotas-fs{
+  font-size: 20px;
+}
+
+.bg-orange-400{
+  background-color: rgb(0 159 227 / var(--tw-bg-opacity));
+}
+
+.envio_detail{
+  margin-top: 20px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.envio_detail-margin{
+  margin-left: 10px;
+}
+
+.colorazul{
+  color: #009EE2;
+}
+
+.flex-contador{
+  margin-left: 20px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.dis-contador{
+    margin-left: 10px;
 }

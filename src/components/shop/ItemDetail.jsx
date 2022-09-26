@@ -2,16 +2,19 @@ import { useContext, useEffect, useState } from "react";
 import ProductContext from "../../context/ProductContext";
 import { NavLink, useParams } from "react-router-dom";
 import {  doc, getDoc, getFirestore } from "firebase/firestore";
+import imgEnvio from "../../img/envio.png";
+import imgDevolver from "../../img/devolver.png";
+import imgCompraProtegida from "../../img/compraprotegido.png";
 
 const ItemDetail = ( { item } ) => {
 
-    const { id: categoryId } = useParams()
+    const { id: categoryId } = useParams();
 
-    const [ product, setProduct ] = useState( [] )
+    const [ product, setProduct ] = useState( [] );
 
     useEffect( () => {
         getProductByCategory()
-    }, [] )
+    }, [] );
 
     const getProductByCategory = () => {
         const db = getFirestore()
@@ -33,8 +36,9 @@ const ItemDetail = ( { item } ) => {
             </div>
             <div className="detail-border">
                 <div className="pd-detail">
-                    <p>Nuevo | {product.vendido} vendidos</p>
-                    <h2 className="card-title">{ product.title }</h2>
+                    <p className="nuevo-vendidos-margin"><b>Nuevo | {product.solds} vendidos</b></p>
+                    <h2 className="card-title"><b>{ product.title }</b></h2>
+                    <p className="masvendidos-margin"><b className="bestseller">más vendido</b> <b>{product.bestseller}º en {product.category}</b></p>
                     <div className="rating">
                         <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400"/>
                         <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" checked/>
@@ -42,9 +46,21 @@ const ItemDetail = ( { item } ) => {
                         <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400"/>
                         <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400"/>
                     </div>
-                    <h3>Precio: ${ product.price }</h3>
-                    <p>en 12x ${ Math.round(product.price / 12)}</p>
-                    <div className="flex-detail">
+                    <h3><b className="price-fs">${ product.price }</b></h3>
+                    <p><b className="quotas-fs">en 12x ${ Math.round(product.price / 12)}</b></p>
+                    <div className="envio_detail">
+                        <img src={imgEnvio} alt="Envio"/>
+                        <p className="envio_detail-margin"><b>Envíos gratis a todo el país</b></p>
+                    </div>
+                    <div className="envio_detail">
+                        <img src={imgDevolver} alt="Devolución gratis"/>
+                        <p className="envio_detail-margin"><b className="colorazul">Devolución gratis.</b> <b>Tenés 30 días desde que lo recibís.</b></p>
+                    </div>
+                    <div className="envio_detail">
+                        <img src={imgCompraProtegida} alt="Compra protegida"/>
+                        <p className="envio_detail-margin"><b className="colorazul">Compra protegida, </b> <b>recibí el producto que esperabas o te devolvemos tu dinero.</b></p>
+                    </div>
+                    <div className="flex-contador">
                         <select className="select border-quanty max-w-xs">
                             <option disabled selected>Cantidad: {product.stock}</option>
                             <option>1</option>
@@ -52,7 +68,7 @@ const ItemDetail = ( { item } ) => {
                             <option>3</option>
                             <option>4</option>
                         </select>
-                        <p>({ product.stock } disponibles)</p>
+                        <p className="dis-contador">({ product.stock } disponibles)</p>
                     </div>
                     <NavLink to={'/cart'}><button onClick={ (  ) => { addHandler( product ) } } className="btn btn-comprar btn-detail">comprar</button></NavLink>
                 </div>

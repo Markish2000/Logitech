@@ -58,3 +58,26 @@ code {
   display: grid;
   grid-template-columns: repeat(3,1fr);
 }
+
+.btn-detail{
+  width: 100%;
+}
+
+.detail-border{
+  height: 100vh;
+  border: #6db5d4 solid 2px;
+}
+
+.flex-detail{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.pd-detail{
+  padding: 0px 20px;
+}
+
+.border-quanty{
+  border: #009EE2 solid 2px;
+}

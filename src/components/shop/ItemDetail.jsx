@@ -1,6 +1,5 @@
 import { useContext, useEffect, useState } from "react";
 import ProductContext from "../../context/ProductContext";
-import ItemCount from "../ItemCount";
 import { NavLink, useParams } from "react-router-dom";
 import {  doc, getDoc, getFirestore } from "firebase/firestore";
 
@@ -21,25 +20,44 @@ const ItemDetail = ( { item } ) => {
             setProduct( { id: snapshot.id, ...snapshot.data() } )
         })
     }
-
     const productContext = useContext( ProductContext );
-
+    
     const addHandler = ( item ) => {
         productContext.addProduct(item)
     };
-
+    
     return (
-            <div className="card w-96 bg-base-100 shadow-xl">
-                <figure><img src={ product.img } alt={ product.title }/></figure>
-                <div className="card-body">
+        <div className="flex-detail">
+            <div>
+                <img src={ product.img } alt={ product.title }/>
+            </div>
+            <div className="detail-border">
+                <div className="pd-detail">
+                    <p>Nuevo | {product.vendido} vendidos</p>
                     <h2 className="card-title">{ product.title }</h2>
-                    <p>Precio: ${ product.price }</p>
-                    <div className="card-actions justify-end">
-                        <ItemCount/>
-                        <NavLink to={'/cart'}><button onClick={ (  ) => { addHandler( product ) } } className="btn btn-comprar">comprar</button></NavLink>
+                    <div className="rating">
+                        <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400"/>
+                        <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" checked/>
+                        <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400"/>
+                        <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400"/>
+                        <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400"/>
                     </div>
+                    <h3>Precio: ${ product.price }</h3>
+                    <p>en 12x ${ Math.round(product.price / 12)}</p>
+                    <div className="flex-detail">
+                        <select className="select border-quanty max-w-xs">
+                            <option disabled selected>Cantidad: {product.stock}</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                        <p>({ product.stock } disponibles)</p>
+                    </div>
+                    <NavLink to={'/cart'}><button onClick={ (  ) => { addHandler( product ) } } className="btn btn-comprar btn-detail">comprar</button></NavLink>
                 </div>
             </div>
+        </div>
     );
 };
 export default ItemDetail

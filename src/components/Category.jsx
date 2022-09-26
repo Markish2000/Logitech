@@ -23,7 +23,7 @@ const Category = () => {
     }
     
     return (
-        <>
+        <div className="gd">
             { products.map( p => 
                 <li key={ p.id }>
                     <NavLink to={ `${ p.id }` }> 
@@ -38,8 +38,9 @@ const Category = () => {
                             </div>
                         </div>
                     </NavLink>
-                </li>)}
-        </>
+                </li>
+            ) }
+        </div>
     )
 }
 export default Category

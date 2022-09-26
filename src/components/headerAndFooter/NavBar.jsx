@@ -52,7 +52,7 @@ const NavBar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <CartWidget/>
+            <NavLink to={'/cart'}><CartWidget/></NavLink>
             </div>
         </div>
     );

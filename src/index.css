@@ -141,3 +141,50 @@ code {
 .dis-contador{
     margin-left: 10px;
 }
+
+.btn-outline{
+  color: #009EE2;
+}
+
+.btn-outline:hover{
+  background-color: #009EE2;
+}
+
+.flex-cart{
+  border: #009EE2 solid 1px;
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-cart{
+  font-size: 20px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-cart{
+  width: 100px;
+  height: 100px;
+}
+
+.prueba{
+  margin-bottom: 20px;
+}
+
+.cart-h1{
+  text-transform: uppercase;
+}
+
+.cart_h1-flex{
+  color: #009EE2;
+  margin-top: 90px;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}

@@ -70,7 +70,7 @@ const ItemDetail = ( { item } ) => {
                         </select>
                         <p className="dis-contador">({ product.stock } disponibles)</p>
                     </div>
-                    <NavLink to={'/cart'}><button onClick={ (  ) => { addHandler( product ) } } className="btn btn-comprar btn-detail">comprar</button></NavLink>
+                    <NavLink to={'/cart'}><button onClick={ (  ) => { addHandler( product ) } } className="btn btn-comprar btn-detail">agregar al carrito</button></NavLink>
                 </div>
             </div>
         </div>

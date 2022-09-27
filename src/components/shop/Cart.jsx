@@ -9,7 +9,7 @@ const Cart = () => {
         <div>
             <div className="cart_h1-flex">
                 <img src={imgCart} alt="Carrito de compras" width="100px"/>
-                <h1 className="cart-h1">carrito de compras</h1>
+                <h1 className="cart-h1"><b>carrito de compras</b></h1>
                 <img src={imgCart} alt="Carrito de compras" width="100px"/>
             </div>
             <div className="flex-cart">

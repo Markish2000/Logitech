@@ -63,10 +63,10 @@ const ItemDetail = ( { item } ) => {
                     <div className="flex-contador">
                         <select className="select border-quanty max-w-xs">
                             <option disabled selected>Cantidad: {product.stock}</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
+                            <option>1 unidad</option>
+                            <option>2 unidades</option>
+                            <option>3 unidades</option>
+                            <option>4 unidades</option>
                         </select>
                         <p className="dis-contador">({ product.stock } disponibles)</p>
                     </div>

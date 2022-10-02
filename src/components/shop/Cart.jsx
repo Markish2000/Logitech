@@ -6,6 +6,11 @@ import imgCart from "../shopping-cart.png"
 const Cart = () => {
     const productContext = useContext( ProductContext );
 
+    const generatePurchaseOrder = () => {
+        const round = Math.round( Math.random() * 100 )
+        alert(`Su orden de compra es: ${round}`)
+    }
+
     return (
         <>
         <div className="cart_h1-flex">
@@ -44,6 +49,9 @@ const Cart = () => {
         </div>
     </div>
     )}
+    <div>
+        <button onClick={generatePurchaseOrder} className="btn btn-outline">finalizar compra</button>
+    </div>
     </>
     )
 }

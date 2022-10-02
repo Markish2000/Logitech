@@ -40,10 +40,10 @@ const NavBar = () => {
                         </label>
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                         <li><NavLink className={navLinkclassName} to={'/'}>inicio</NavLink></li>
-                    { categories.map(c => <li key={ c }><NavLink className={navLinkclassName} to={`${ c }`}>{ c }</NavLink></li>)}
+                    { categories.map( c => <li key={ c }><NavLink className={navLinkclassName} to={`${ c }`}>{ c }</NavLink></li> ) }
                         </ul>
                     </div>
-                    <NavLink className="btn" to={'/'}><img src={imgRecimad} alt="Recimad" width="150px"/></NavLink>
+                    <NavLink className="btn" to={'/'}><img src={ imgRecimad } alt="Recimad" width="150px"/></NavLink>
                 </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">

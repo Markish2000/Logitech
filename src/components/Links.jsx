@@ -1,6 +1,6 @@
 import { collection, getDocs, getFirestore } from "firebase/firestore";
 import { useEffect, useState } from "react"
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Links = () => {
 
@@ -16,7 +16,7 @@ const Links = () => {
 
     return (
         <div>
-            { products.map(c => <Link key={c.id} to={`${c.category}`}>{c.category}</Link>)}
+            { products.map(c => <NavLink key={c.id} to={`${c.category}`}>{c.category}</NavLink>)}
         </div>
     )
 }

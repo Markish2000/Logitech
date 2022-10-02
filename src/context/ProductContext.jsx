@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import swal from "sweetalert";
 
 const ProductContext = createContext();
@@ -12,14 +12,21 @@ export const ProductContextProvider = ( { children } ) => {
         products.some( ( sought ) => sought.title === product.title )
     };
 
+    useEffect(() => {
+        console.log("Productos :D")
+        console.log(products)
+    }, [products])
+    
+
     const addProduct = ( product ) => {
         if( exists( product ) ) {
             return swal.fire( "El producto ya existe en el carrito." )
         };
-
+        console.log("No funco")
         const newProduct = { ...product };
+        console.log(newProduct)
         setProducts( [ ...products, newProduct ] );
-        swal.fire( "El producto se agregó correctamente al carrito." );
+        // swal.fire( "El producto se agregó correctamente al carrito." );
     };
 
     const cleanProduct = ( product ) => {

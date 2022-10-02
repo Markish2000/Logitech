@@ -11,14 +11,14 @@ const Category = () => {
 
     useEffect( () => {
         getProductByCategory()
-    }, [])
+    }, [ categoryId ])
 
     const getProductByCategory = () => {
         const db = getFirestore()
         const productCollection = collection( db , 'products' );
-        const q = query(productCollection, where('category', '==', categoryId) )
+        const q = query(productCollection, where( 'category', '==', categoryId ) )
         getDocs( q ).then( snapshot => {
-            setProducts( snapshot.docs.map( d => ({id: d.id, ...d.data()})))
+            setProducts( snapshot.docs.map( d => ( { id: d.id, ...d.data() } ) ) )
         })
     }
     

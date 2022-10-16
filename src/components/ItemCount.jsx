@@ -1,41 +1,34 @@
-import { useState } from "react";
+import { useContext } from "react";
+import ProductContext from "../context/ProductContext";
 
-const ItemCount = () => {
-    const [ counter, setCounter ] = useState( 1 );
-    const [ viewImput, setViewImput ] = useState( false );
+const ItemCount = ( { quantity, product, setCounter } ) => {
 
-    const handleClickAdd = () => {
-        setCounter( counter + 1 )
-        if ( counter + 1 >= 5) {
-            setViewImput( true )
-        }
+    const productContext = useContext( ProductContext );
+    
+    const updateProduct = ( item, quantitySelect ) => {
+        productContext.updateProductQuantity( item, quantitySelect )
     };
 
+    const handleClickAdd = () => {
+        if ( quantity < product.stock ){
+            setCounter( quantity + 1 )
+            updateProduct( product, quantity + 1)
+        }
+
+    };
     const handleClickDelete = () => {
-        if ( counter > 1 ) {
-            setCounter( counter - 1 )
+        if ( quantity > 1 ) {
+            setCounter( quantity - 1 )
+            updateProduct( product, quantity - 1)
         };
     };
 
-    const handleChangeCounter = ( event ) => {
-        setCounter( event.target.value )
-    };
-
-    if (viewImput) {
-        return (
-            <>
-            <input type="number" min="6" onChange={ handleChangeCounter }/>
-            <h3>{ counter }</h3>
-            </>
-        )
-    } else {
         return (
             <div className="btn-group">
                     <button onClick={ handleClickDelete } className="btn btn-comprar">-</button>
-                    <p className="contador">{ counter }</p>
+                    <p className="contador">{ quantity }</p>
                     <button onClick={ handleClickAdd } className="btn btn-comprar">+</button>
             </div>
         )
-    };
 };
 export default ItemCount

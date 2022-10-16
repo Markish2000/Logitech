@@ -180,6 +180,12 @@ code {
   text-transform: uppercase;
 }
 
+.modal-box {
+  align-items: center;
+  overflow: visible;
+  box-shadow: 7px 13px 37px #009EE2;
+}
+
 .cart_h1-flex{
   color: #009EE2;
   margin-top: 90px;
@@ -187,4 +193,62 @@ code {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.section__formulario__input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2c2a30;
+  margin-top: 50px;
+  padding: 30px;
+  border-radius: 4px;
+}
+
+.section__formulario__input .section__formulario__input__h4 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.section__formulario__input .section__formulario__input--border {
+  color: #000000;
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  border: 3px solid #00618a;
+}
+
+.section__formulario__input .section__formulario__input__p {
+  margin: 20px 0;
+}
+
+.section__formulario__input .section__formulario__input__p .section__formulario__input__check {
+  margin-right: 10px;
+}
+
+.section__formulario__input .section__formulario__input__boton {
+  background-color: #009EE2;
+  font-size: 20px;
+  width: 100%;
+  padding: 12px;
+}
+
+.section__formulario__input .section__formulario__input__boton:hover {
+  color: #ffffff;
+}
+
+.section__formulario__input .section__formulario__input__boton:active {
+  background-color: #06648d;
+}
+
+.section__formulario__input .section__formulario__input__a {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.flex-formu{
+  display: flex;
+  justify-content: center;
 }

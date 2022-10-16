@@ -1,5 +1,4 @@
 import { createContext, useContext, useEffect, useState } from "react";
-import swal from "sweetalert";
 
 const ProductContext = createContext();
 
@@ -8,30 +7,50 @@ export const useTaxtContext = () => useContext( ProductContext );
 export const ProductContextProvider = ( { children } ) => {
     const [ products, setProducts ] = useState( [] );
 
-    const exists = ( product ) => {
-        products.some( ( sought ) => sought.title === product.title )
-    };
-
     useEffect(() => {
-        console.log("Productos :D")
-        console.log(products)
-    }, [products])
-    
+        const getData = localStorage.getItem( 'products' );
+        if ( getData ) {
+            setProducts( JSON.parse( getData ) )
+        }
+    }, [] )
 
-    const addProduct = ( product ) => {
-        if( exists( product ) ) {
-            return swal.fire( "El producto ya existe en el carrito." )
-        };
-        console.log("No funco")
-        const newProduct = { ...product };
-        console.log(newProduct)
-        setProducts( [ ...products, newProduct ] );
-        // swal.fire( "El producto se agregó correctamente al carrito." );
+    const exists = ( product ) => {
+        const checkId = ( productId ) => {
+            return productId.id === product.id;
+        }
+        return products.some( checkId )
     };
+    
+    const addProduct = ( product, quantitySelect ) => {
+        if( exists( product ) ) {
+            const existsProduct = products.find( element => element.id === product.id);
+            existsProduct.quantity += parseInt( quantitySelect )
+            const listNoRepeat = products.filter( element => element.id !== product.id );
+            listNoRepeat.push( existsProduct );
+            setProducts( listNoRepeat );
+            localStorage.setItem( 'products', JSON.stringify( listNoRepeat ) );
+            return
+        };
+        product.quantity = parseInt( quantitySelect )
+        const newProduct = { ...product };
+        setProducts( [ ...products, newProduct ] );
+        localStorage.setItem( 'products', JSON.stringify( [ ...products, newProduct ] ) );
+    };
+
+    const updateProductQuantity = ( product, quantitySelect ) => {
+            const existsProduct = products.find( element => element.id === product.id);
+            existsProduct.quantity = parseInt( quantitySelect )
+            const listNoRepeat = products.filter( element => element.id !== product.id );
+            listNoRepeat.push( existsProduct );
+            setProducts( listNoRepeat );
+            localStorage.setItem( 'products', JSON.stringify( listNoRepeat ) );
+        };
 
     const cleanProduct = ( product ) => {
-        const cleanProduct = products.filter(sought => sought.id !== product.id);
-        return setProducts( cleanProduct );
+        const listCleanProduct = products.filter( sought => sought.id !== product.id );
+        console.log( listCleanProduct )
+        setProducts( listCleanProduct );
+        localStorage.setItem( 'products', JSON.stringify( listCleanProduct ) );
     };
 
     const emptyCart = () => {
@@ -60,6 +79,7 @@ export const ProductContextProvider = ( { children } ) => {
         products, 
         exists, 
         addProduct, 
+        updateProductQuantity,
         cleanProduct, 
         emptyCart, 
         earrings, 

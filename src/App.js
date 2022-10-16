@@ -13,10 +13,10 @@ function App() {
       <BrowserRouter>
         <NavBar/>
         <Routes>
-          <Route path='/' element={<LogitechContainer/>}/>
-          <Route path=':id' element={<Category/>}/>
-          <Route path=':id/:id' element={<ItemDetail/>}/>
-          <Route path='cart' element={<Cart/>}/>
+          <Route path='/' element={ <LogitechContainer/> }/>
+          <Route path=':id' element={ <Category/> }/>
+          <Route path=':id/:id' element={ <ItemDetail/> }/>
+          <Route path='cart' element={ <Cart/> }/>
         </Routes>
         <Footer/>
       </BrowserRouter>

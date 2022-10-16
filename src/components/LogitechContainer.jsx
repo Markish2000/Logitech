@@ -6,7 +6,7 @@ const LogitechContainer = () => {
 
   return (
     <div>
-      <img src={ imgLogitech } alt="Logitech"/>
+      <img width="100%" src={ imgLogitech } alt="Logitech"/>
         <video controls src={ videoLogitech }/>
         <video controls src={ videoLogitechMouse }/>
     </div>

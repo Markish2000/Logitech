@@ -40,6 +40,10 @@ const Order = () => {
         setNumber(event.target.value)
     }
 
+    const refreshWeb = () => {
+        window.location.reload()
+    }
+
     const sendOrder = ( ) => {
         const order = {
             buyer: { name: { name } , phone: { number } , email: { email } },
@@ -74,7 +78,7 @@ const Order = () => {
                     <label htmlFor="my-modal-3" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
                     <h1 className="h1-modal-id"><b>¡Has completado la compra!</b></h1>
                     <h2 className="h2-modal-id"><b>Tú id de compra es: {orderId}</b></h2>
-                        <label htmlFor="my-modal-3" className="btn section__formulario__input__boton" type="submit" name="ok" value="ok">ok</label>
+                        <label onClick={ refreshWeb } htmlFor="my-modal-3" className="btn section__formulario__input__boton" type="submit" name="ok" value="ok">ok</label>
                 </div>
             </div>
                     </div>

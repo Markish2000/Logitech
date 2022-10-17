@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import Swal from "sweetalert2";
 import ProductContext from "../../context/ProductContext";
 import imgCart from "../shopping-cart.png"
@@ -63,8 +63,8 @@ const Cart = () => {
                     <ProductCart key={ product.id } product={ product } deleteProductAlert={ deleteProductAlert }/>
                 )
             }
+            <p className="p__total"><b>Total: { totalPrice() }</b></p>
             <Order/>
-            <p>Total:{totalPrice()} </p>
     </>
     )
 }

@@ -248,7 +248,42 @@ code {
   margin-top: 30px;
 }
 
-.flex-formu{
+.p__total{
+  font-size: 2em;
+  margin-top: 20px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.finalizar__compra__formu{
+  background-color: #008ac5;
+}
+
+.finalizar__compra__formu:hover{
+  background-color: #1b5e7a;
+}
+
+.finalizar-compra-div{
+  margin-top: 20px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-id{
   display: flex;
   justify-content: center;
+  flex-direction: column;
+}
+
+.h1-modal-id{
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.h2-modal-id{
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
 }

@@ -48,7 +48,6 @@ export const ProductContextProvider = ( { children } ) => {
 
     const cleanProduct = ( product ) => {
         const listCleanProduct = products.filter( sought => sought.id !== product.id );
-        console.log( listCleanProduct )
         setProducts( listCleanProduct );
         localStorage.setItem( 'products', JSON.stringify( listCleanProduct ) );
     };

@@ -24,7 +24,9 @@ export const ProductContextProvider = ( { children } ) => {
     const addProduct = ( product, quantitySelect ) => {
         if( exists( product ) ) {
             const existsProduct = products.find( element => element.id === product.id);
-            existsProduct.quantity += parseInt( quantitySelect )
+            if ( ( existsProduct.quantity + parseInt( quantitySelect ) ) <= product.stock ) {
+                existsProduct.quantity += parseInt( quantitySelect )
+            }
             const listNoRepeat = products.filter( element => element.id !== product.id );
             listNoRepeat.push( existsProduct );
             setProducts( listNoRepeat );
@@ -62,18 +64,6 @@ export const ProductContextProvider = ( { children } ) => {
             return earrings;
     };
 
-    const updateState = ( product, state ) => {
-        const copyProduct = [ ...products ];
-
-        const updateCart = copyProduct.map( ( current ) => {
-            if ( current.id === product.id ) {
-                return { ...current, state: state ? false : true }
-            } else {
-                return current;
-            };
-        });
-    };
-
     const context = {
         products, 
         exists, 
@@ -81,8 +71,7 @@ export const ProductContextProvider = ( { children } ) => {
         updateProductQuantity,
         cleanProduct, 
         emptyCart, 
-        earrings, 
-        updateState
+        earrings,
     };
 
     return (

@@ -20,14 +20,7 @@ const ItemDetail = ( { item } ) => {
     useEffect( () => {
         getProductByCategory()
     }, [] );
-    
-    const buyProductAlert = () => {
-        Swal.fire({
-            icon: 'success',
-            title: 'El producto se ha agregado al carrito de compras',
-        })
-    }
-    
+
     const createOption = () => {
         let optionStock = [];
         for (let i = 1; i <= product.stock; i++){
@@ -46,7 +39,11 @@ const ItemDetail = ( { item } ) => {
     const productContext = useContext( ProductContext );
     
     const addHandler = ( item, quantitySelect ) => {
-        productContext.addProduct( item, quantitySelect )
+        productContext.addProduct( item, quantitySelect );
+        Swal.fire({
+            icon: 'success',
+            title: 'El producto se ha actualizado al carrito de compras',
+        })
     };
     
     return (

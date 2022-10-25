@@ -48,7 +48,7 @@ const Order = () => {
     const sendOrder = ( ) => {
         const order = {
             buyer: { name: { name } , phone: { number } , email: { email } },
-            item: [ { name: "Mouse", price:  100 , quantity: 1 } ],
+            item: [ { name: [product.name], price:  100 , quantity: 1 } ],
             total: 100
         };
         const db = getFirestore();

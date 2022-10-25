@@ -16,11 +16,11 @@ const ItemDetail = ( { item } ) => {
     const changeQuantitySelect = ( event ) => {
         setQuantitySelect( event.target.value )
     }
-
-    useEffect( () => {
-        getProductByCategory()
-    }, [] );
-
+    
+        useEffect( () => {
+            getProductByCategory()
+        }, [] );
+    
     const createOption = () => {
         let optionStock = [];
         for (let i = 1; i <= product.stock; i++){
@@ -28,7 +28,7 @@ const ItemDetail = ( { item } ) => {
         };
         return optionStock;
     };
-
+    
     const getProductByCategory = () => {
         const db = getFirestore()
         const productRef = doc( db , 'products', categoryId );
@@ -42,7 +42,7 @@ const ItemDetail = ( { item } ) => {
         productContext.addProduct( item, quantitySelect );
         Swal.fire({
             icon: 'success',
-            title: 'El producto se ha actualizado al carrito de compras',
+            title: 'Se ha actualizado el carrito de compras',
         })
     };
     
@@ -73,7 +73,7 @@ const ItemDetail = ( { item } ) => {
                     <div className="flex-contador">
                         { product.stock === 0 ? (
                                 <select className="overflow-auto select border-quanty max-w-xs" disabled>
-                                <option value={ 0 } disabled selected>cantidad: { product.stock }</option>
+                                    <option value={ 0 } disabled selected>cantidad: { product.stock }</option>
                                 </select>
                             ) : (
                                 <select onChange={ changeQuantitySelect } value={ quantitySelect } className="overflow-auto select border-quanty max-w-xs">
@@ -85,7 +85,7 @@ const ItemDetail = ( { item } ) => {
                         }
                         <p className="dis-contador">({ product.stock } disponibles)</p>
                     </div>
-                        { product.stock === 0 ? ( <button className="btn btn-comprar btn-detail" disabled>agregar al carrito</button>) : (<button onClick={ (  ) => { addHandler( product, quantitySelect ) } } className="btn btn-comprar btn-detail">agregar al carrito</button>)}
+                        { product.stock === 0 ? ( <button className="btn btn-comprar btn-detail" disabled>agregar al carrito</button>) : (<button onClick={ ( ) => { addHandler( product, quantitySelect ) } } className="btn btn-comprar btn-detail">agregar al carrito</button>)}
                 </div>
             </div>
         </div>
